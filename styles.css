@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.loading-container {
+    text-align: center;
+}
+
+#loading-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #03a9f4;
+    transition: width 0.1s;
+}
+
+.hidden {
+    display: none;
+}
+
+.animated-text {
+    font-size: 48px;
+    color: #03a9f4;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

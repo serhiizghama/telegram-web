@@ -1,0 +1,20 @@
+# Dependency directory
+node_modules
+
+# WebStorm
+*.idea
+
+# Logs
+logs
+*.log
+
+.nyc_output
+coverage
+dist
+.env
+.DS_Store
+
+# stryker temp files
+.stryker-tmp
+
+db-sport-event-poll
