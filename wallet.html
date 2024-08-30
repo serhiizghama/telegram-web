@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="styles-wallet.css">
+</head>
+
+<body>
+    <!-- Экран загрузки -->
+    <div class="loading-container">
+        <div id="loading-text">Loading 0%</div>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Основной контент: кошелек -->
+    <div id="wallet-content" class="wallet-container hidden">
+        <div class="header">
+            <div class="avatar">
+                <img src="images/avatar.png" alt="Avatar">
+            </div>
+            <div class="title-container">
+                <h1>Wallet</h1>
+            </div>
+            <div class="bell-icon">
+                <img src="images/bell.png" alt="Notifications">
+            </div>
+        </div>
+        <div class="balance-container">
+            <p>Available Balance</p>
+            <h2>$18,420.81</h2>
+        </div>
+        <div class="buttons-container">
+            <button class="pay-button">Pay</button>
+            <button class="request-button">Request</button>
+        </div>
+    </div>
+
+    <script src="script-wallet.js"></script>
+</body>
+
+</html>
